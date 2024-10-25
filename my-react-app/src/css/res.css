@@ -1,0 +1,17 @@
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Example for a specific element */
+  .marketing-metric-card {
+    grid-column: 1 / span 2; /* Span 2 columns */
+    /* Other styles... */
+  }
